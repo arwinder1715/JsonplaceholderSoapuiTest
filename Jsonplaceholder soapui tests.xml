@@ -1,0 +1,315 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:soapui-project id="e8974105-a8c2-4d44-8709-c6b0b3b1cbb8" activeEnvironment="Default" name="Jsonplaceholder soapui tests" resourceRoot="" soapui-version="5.2.1" abortOnError="false" runType="SEQUENTIAL" xmlns:con="http://eviware.com/soapui/config"><con:settings/><con:interface xsi:type="con:RestService" id="c4dccffa-1613-4609-bfc0-a50380a427cf" wadlVersion="http://wadl.dev.java.net/2009/02" name="http://jsonplaceholder.typicode.com" type="rest" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:settings/><con:definitionCache type="TEXT" rootPart=""/><con:endpoints><con:endpoint>http://jsonplaceholder.typicode.com</con:endpoint></con:endpoints><con:resource name="todos" path="/todos" id="0451e9c7-adc9-420f-b293-e9740d557fe2"><con:settings/><con:parameters/><con:method name="" id="c1f1a49f-420a-4128-a1a7-bc7adcc87b26" method="GET"><con:settings/><con:parameters><con:parameter><con:name>completed</con:name><con:value/><con:style>QUERY</con:style><con:default/></con:parameter></con:parameters><con:representation type="RESPONSE"><con:mediaType>application/json; charset=utf-8</con:mediaType><con:status>200</con:status><con:params/><con:element>Response</con:element></con:representation><con:representation type="FAULT"><con:mediaType>application/json; charset=utf-8</con:mediaType><con:status>404</con:status><con:params/><con:element>Fault</con:element></con:representation></con:method></con:resource><con:resource name="posts" path="/posts" id="bcdf3ed0-6ebc-4df7-ae3f-666d15a875b1"><con:settings/><con:parameters/><con:resource name="{id}" path="{id}" id="d4c0fad1-3446-40f3-beb6-021761aa2fc9"><con:settings/><con:parameters><con:parameter><con:name>id</con:name><con:value>id</con:value><con:style>TEMPLATE</con:style><con:default>id</con:default></con:parameter></con:parameters><con:method name="Get" id="3f16f8d1-ccd9-4fff-83e9-3a3974c7981d" method="GET"><con:settings/><con:parameters/><con:representation type="RESPONSE"><con:mediaType>application/json; charset=utf-8</con:mediaType><con:status>200</con:status><con:params/><con:element xmlns:ns="http://jsonplaceholder.typicode.com/posts/1">ns:Response</con:element></con:representation><con:representation type="FAULT"><con:mediaType>application/json; charset=utf-8</con:mediaType><con:status>404</con:status><con:params/><con:element>Fault</con:element></con:representation></con:method><con:method name="Post" id="afe61204-3220-4eb3-b0cb-f5634d0bd984" method="POST"><con:settings/><con:parameters/><con:representation type="REQUEST"><con:mediaType>application/json</con:mediaType><con:params/></con:representation><con:representation type="RESPONSE"><con:mediaType>application/json; charset=utf-8</con:mediaType><con:status>201</con:status><con:params/><con:element xmlns:pos="http://jsonplaceholder.typicode.com/posts/">pos:Response</con:element></con:representation><con:representation type="FAULT"><con:mediaType>application/json; charset=utf-8</con:mediaType><con:status>404</con:status><con:params/><con:element>Fault</con:element></con:representation></con:method><con:method name="Put" id="26a66553-09ef-489d-ba07-c698b8c847c3" method="PUT"><con:settings/><con:parameters/><con:representation type="FAULT"><con:mediaType>application/json; charset=utf-8</con:mediaType><con:status>404</con:status><con:params/><con:element>Fault</con:element></con:representation><con:representation type="REQUEST"><con:mediaType>application/json</con:mediaType><con:params/></con:representation><con:representation type="RESPONSE"><con:mediaType>application/json; charset=utf-8</con:mediaType><con:status>200</con:status><con:params/><con:element xmlns:pos="http://jsonplaceholder.typicode.com/posts/">pos:Response</con:element></con:representation></con:method><con:method name="Delete" id="3740f68d-3e6b-45eb-882d-449a4a7cd457" method="DELETE"><con:settings/><con:parameters/><con:representation type="REQUEST"><con:mediaType>application/json</con:mediaType><con:params/></con:representation><con:representation type="RESPONSE"><con:mediaType>application/json; charset=utf-8</con:mediaType><con:status>200</con:status><con:params/><con:element>Response</con:element></con:representation><con:representation type="FAULT"><con:mediaType>application/json; charset=utf-8</con:mediaType><con:status>404</con:status><con:params/><con:element>Fault</con:element></con:representation></con:method></con:resource><con:method name="Get" id="6c921e5a-fef1-441a-9d89-c8afc4443214" method="GET"><con:settings/><con:parameters><con:parameter><con:name>userId</con:name><con:value/><con:style>QUERY</con:style><con:default/></con:parameter></con:parameters><con:representation type="RESPONSE"><con:mediaType>application/json; charset=utf-8</con:mediaType><con:status>200 201</con:status><con:params/><con:element>Response</con:element></con:representation><con:representation type="REQUEST"><con:mediaType>application/json</con:mediaType><con:params/></con:representation></con:method><con:method name="Post" id="0a2eeffa-7bbf-42bf-a1d3-e2b7dafdee23" method="POST"><con:settings/><con:parameters/><con:representation type="RESPONSE"><con:mediaType>application/json; charset=utf-8</con:mediaType><con:status>201</con:status><con:params/><con:element xmlns:pos="http://jsonplaceholder.typicode.com/posts">pos:Response</con:element></con:representation><con:representation type="REQUEST"><con:mediaType>application/json</con:mediaType><con:params/></con:representation></con:method></con:resource><con:resource name="users" path="/users" id="8e56926f-9fe3-46e9-827c-d2118ae926b7"><con:settings/><con:parameters/><con:resource name="{id}" path="{id}" id="6ee72113-61b4-419a-bf0a-9dde3559dfc1"><con:settings/><con:parameters><con:parameter><con:name>id</con:name><con:value>id</con:value><con:style>TEMPLATE</con:style><con:default>id</con:default></con:parameter></con:parameters><con:method name="Get" id="7a133261-018f-4804-9aa2-85d4b4bbb5e2" method="GET"><con:settings/><con:parameters/><con:representation type="FAULT"><con:mediaType>application/json; charset=utf-8</con:mediaType><con:status>404</con:status><con:params/><con:element>Fault</con:element></con:representation><con:representation type="RESPONSE"><con:mediaType>application/json; charset=utf-8</con:mediaType><con:status>200</con:status><con:params/><con:element xmlns:id="http://jsonplaceholder.typicode.com/users/id">id:Response</con:element></con:representation></con:method></con:resource><con:method name="Get" id="36d699ed-cfa8-4b9c-bbfb-6e27af372f24" method="GET"><con:settings/><con:parameters><con:parameter><con:name>id</con:name><con:style>QUERY</con:style></con:parameter></con:parameters><con:representation type="RESPONSE"><con:mediaType>application/json; charset=utf-8</con:mediaType><con:status>200</con:status><con:params/><con:element>Response</con:element></con:representation><con:representation type="FAULT"><con:mediaType>application/json; charset=utf-8</con:mediaType><con:status>404</con:status><con:params/><con:element>Fault</con:element></con:representation></con:method></con:resource><con:resource name="photos" path="/photos" id="c8ea4d4d-959a-46ad-a8cf-87dc09bbf915"><con:settings/><con:parameters/><con:method name="Get" id="5fb968e8-c318-45cc-a7ba-a01650ab559f" method="GET"><con:settings/><con:parameters><con:parameter><con:name>albumId</con:name><con:value/><con:style>QUERY</con:style><con:default/></con:parameter><con:parameter><con:name>id</con:name><con:style>QUERY</con:style></con:parameter></con:parameters><con:representation type="RESPONSE"><con:mediaType>application/json; charset=utf-8</con:mediaType><con:status>200</con:status><con:params/><con:element>Response</con:element></con:representation></con:method></con:resource></con:interface><con:testSuite id="245e48ed-d896-4126-a302-2aaddffa49c8" name="Jsonplaceholder Test Suite"><con:settings/><con:runType>SEQUENTIAL</con:runType><con:testCase id="c69b7f5b-cbd1-4cb4-b694-49fd99df9f02" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="Todos - get all completed" searchProperties="true"><con:settings/><con:testStep type="properties" name="Properties - set completed value" id="23aafc9e-3b52-4538-88bf-3965261dc12d"><con:settings/><con:config xsi:type="con:PropertiesStep" saveFirst="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:properties><con:property><con:name>completed</con:name><con:value>true</con:value></con:property></con:properties></con:config></con:testStep><con:testStep type="transfer" name="Property Transfer - completed value" id="de171cd0-401e-438a-9ee5-f601f9c22f94"><con:settings/><con:config xsi:type="con:PropertyTransfersStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:transfers setNullOnMissingSource="true" transferTextContent="true" failOnError="true" ignoreEmpty="false" transferToAll="false" entitize="false" transferChildNodes="false"><con:name>TransferCompleted</con:name><con:sourceType>completed</con:sourceType><con:sourceStep>Properties - set completed value</con:sourceStep><con:targetType>completed</con:targetType><con:targetStep>GET all completed 200 (OK)</con:targetStep><con:upgraded>true</con:upgraded></con:transfers></con:config></con:testStep><con:testStep type="restrequest" name="GET all completed 200 (OK)" id="6b91c9ef-5e65-474b-8e40-64b7862850a3"><con:settings/><con:config service="http://jsonplaceholder.typicode.com" resourcePath="/todos" methodName="" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="GET all completed 200 (OK)" id="e0661f05-2353-4e27-bb99-96295c80bbbb" mediaType="application/json"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>http://jsonplaceholder.typicode.com</con:endpoint><con:request/><con:originalUri>http://jsonplaceholder.typicode.com/todos</con:originalUri><con:assertion type="Valid HTTP Status Codes" id="0e015d39-4c11-48f0-86c8-e5939a0520e1" name="Valid HTTP Status Codes"><con:configuration><codes>200</codes></con:configuration></con:assertion><con:assertion type="Simple Contains" id="3e9dc11d-fcf2-4e7c-a3b2-964d4d43a069" name="Contains"><con:configuration><token>"completed": true</token><ignoreCase>false</ignoreCase><useRegEx>false</useRegEx></con:configuration></con:assertion><con:assertion type="Simple NotContains" id="8addfcb2-b1b9-4b70-a4d3-152cbc2ecaac" name="Not Contains"><con:configuration><token>"completed": false</token><ignoreCase>false</ignoreCase><useRegEx>false</useRegEx></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters><entry key="completed" value="true" xmlns="http://eviware.com/soapui/config"/></con:parameters><con:parameterOrder><con:entry>completed</con:entry></con:parameterOrder></con:restRequest></con:config></con:testStep><con:properties/></con:testCase><con:testCase id="771b02a2-1c08-4fee-9492-14a875acf773" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="Posts - create new entry" searchProperties="true"><con:settings/><con:testStep type="restrequest" name="POST new entry 201 (Created)" id="63b43961-5d01-4806-a902-9de9c9faa06b"><con:settings/><con:config service="http://jsonplaceholder.typicode.com" methodName="Post" resourcePath="/posts" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="POST new entry 201 (Created)" id="fa811239-187a-446c-8946-d9ae099ff8cc" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://jsonplaceholder.typicode.com</con:endpoint><con:request>{
+  "userId": 1,
+  "id": 1,
+   "title": "test_title",
+   "body": "test_body"
+}</con:request><con:originalUri>http://jsonplaceholder.typicode.com/posts</con:originalUri><con:assertion type="Valid HTTP Status Codes" id="e13449b0-c1b7-4ac9-9e20-d9e090d460aa" name="Valid HTTP Status Codes"><con:configuration><codes>201</codes></con:configuration></con:assertion><con:assertion type="JsonPath Match" id="7e0a66bc-16c2-4a10-9c57-f6ee499f7780" name="JsonPath Match userID"><con:configuration><path>$userId</path><content>1</content><allowWildcards>false</allowWildcards><ignoreNamspaceDifferences>false</ignoreNamspaceDifferences><ignoreComments>false</ignoreComments></con:configuration></con:assertion><con:assertion type="JsonPath Match" id="71214c45-4130-47a7-af12-0ef5fe02347d" name="JsonPath Match id"><con:configuration><path>$.id</path><content>1</content><allowWildcards>false</allowWildcards><ignoreNamspaceDifferences>false</ignoreNamspaceDifferences><ignoreComments>false</ignoreComments></con:configuration></con:assertion><con:assertion type="JsonPath Match" id="3ac02a15-0563-4102-8f4f-bd9bbd9729cb" name="JsonPath Match title"><con:configuration><path>$.title</path><content>test_title</content><allowWildcards>false</allowWildcards><ignoreNamspaceDifferences>false</ignoreNamspaceDifferences><ignoreComments>false</ignoreComments></con:configuration></con:assertion><con:assertion type="JsonPath Match" id="5f1b0327-1e01-4b6b-9410-ca9c7b734b8d" name="JsonPath Match body"><con:configuration><path>$.body</path><content>test_body</content><allowWildcards>false</allowWildcards><ignoreNamspaceDifferences>false</ignoreNamspaceDifferences><ignoreComments>false</ignoreComments></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters><entry key="id" value="" xmlns="http://eviware.com/soapui/config"/></con:parameters><con:parameterOrder><con:entry/></con:parameterOrder></con:restRequest></con:config></con:testStep><con:testStep type="groovy" name="Groovy Script - validate json" id="743a6cf0-c143-42e9-ada8-6f8240232af2"><con:settings/><con:config><script>import groovy.json.*
+
+// get the response from the first request using its name
+def response = context.expand('${POST new entry 201 (Created)#Response}')
+// parse it
+def json = new JsonSlurper().parseText(response)
+log.info json.toString()
+assert json.toString() == "[id:1, body:test_body, title:test_title, userId:1]"</script></con:config></con:testStep><con:testStep type="restrequest" name="POST new entry with same name (Conflict)" id="54bc9f1c-a552-4b7a-9ac6-0f519b5314cd" disabled="true"><con:settings/><con:config service="http://jsonplaceholder.typicode.com" methodName="Post" resourcePath="/posts" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="POST new entry with same name (Conflict)" id="fa811239-187a-446c-8946-d9ae099ff8cc" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://jsonplaceholder.typicode.com</con:endpoint><con:request>{
+  "userId": 1,
+  "id": 1,
+   "title": "test_title",
+   "body": "test_body"
+}</con:request><con:originalUri>http://jsonplaceholder.typicode.com/posts</con:originalUri><con:assertion type="Valid HTTP Status Codes" id="e13449b0-c1b7-4ac9-9e20-d9e090d460aa" name="Valid HTTP Status Codes"><con:configuration><codes>201</codes></con:configuration></con:assertion><con:assertion type="JsonPath Match" id="7e0a66bc-16c2-4a10-9c57-f6ee499f7780" name="JsonPath Match userID"><con:configuration><path>$userId</path><content>1</content><allowWildcards>false</allowWildcards><ignoreNamspaceDifferences>false</ignoreNamspaceDifferences><ignoreComments>false</ignoreComments></con:configuration></con:assertion><con:assertion type="JsonPath Match" id="71214c45-4130-47a7-af12-0ef5fe02347d" name="JsonPath Match id"><con:configuration><path>$.id</path><content>1</content><allowWildcards>false</allowWildcards><ignoreNamspaceDifferences>false</ignoreNamspaceDifferences><ignoreComments>false</ignoreComments></con:configuration></con:assertion><con:assertion type="JsonPath Match" id="3ac02a15-0563-4102-8f4f-bd9bbd9729cb" name="JsonPath Match title"><con:configuration><path>$.title</path><content>test_title</content><allowWildcards>false</allowWildcards><ignoreNamspaceDifferences>false</ignoreNamspaceDifferences><ignoreComments>false</ignoreComments></con:configuration></con:assertion><con:assertion type="JsonPath Match" id="5f1b0327-1e01-4b6b-9410-ca9c7b734b8d" name="JsonPath Match body"><con:configuration><path>$.body</path><content>test_body</content><allowWildcards>false</allowWildcards><ignoreNamspaceDifferences>false</ignoreNamspaceDifferences><ignoreComments>false</ignoreComments></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters><entry key="id" value="" xmlns="http://eviware.com/soapui/config"/></con:parameters><con:parameterOrder><con:entry/></con:parameterOrder></con:restRequest></con:config></con:testStep><con:properties><con:property><con:name>id</con:name><con:value>null</con:value></con:property><con:property><con:name>userId</con:name><con:value>1</con:value></con:property></con:properties></con:testCase><con:testCase id="913edf30-81fb-4e8e-a3d1-3444d96f9f6c" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="Posts - update entry" searchProperties="true"><con:settings/><con:testStep type="properties" name="Properties - set id for update" id="9bddb1da-9a66-46b2-a88c-998f3668d268"><con:settings/><con:config xsi:type="con:PropertiesStep" saveFirst="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:properties><con:property><con:name>id</con:name><con:value>1</con:value></con:property></con:properties></con:config></con:testStep><con:testStep type="transfer" name="Property Transfer - set id" id="28bf1ce8-6598-4705-b0a7-0849f7fc29d9"><con:settings/><con:config xsi:type="con:PropertyTransfersStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:transfers setNullOnMissingSource="true" transferTextContent="true" failOnError="true" ignoreEmpty="false" transferToAll="false" entitize="false" transferChildNodes="false"><con:name>id</con:name><con:sourceType>id</con:sourceType><con:sourceStep>Properties - set id for update</con:sourceStep><con:targetType>id</con:targetType><con:targetStep>PUT update entry 200 (OK)</con:targetStep><con:upgraded>true</con:upgraded></con:transfers></con:config></con:testStep><con:testStep type="restrequest" name="PUT update entry 200 (OK)" id="3b137c9b-75ef-49bf-9789-1fc2c0cc45ce"><con:settings/><con:config service="http://jsonplaceholder.typicode.com" methodName="Put" resourcePath="/posts/{id}" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="PUT update entry 200 (OK)" id="0a0163e3-58f1-4d13-968a-19ffca919dd5" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://jsonplaceholder.typicode.com</con:endpoint><con:request>{
+  "userId": 1,
+  "id": 1,
+   "title": "test_title2",
+   "body": "test_body2",
+   "fake_body": "fake"
+}</con:request><con:originalUri>http://jsonplaceholder.typicode.com/posts/1</con:originalUri><con:assertion type="Valid HTTP Status Codes" id="7154f56a-e9ff-427f-8280-1418870b1512" name="Valid HTTP Status Codes"><con:configuration><codes>200</codes></con:configuration></con:assertion><con:assertion type="JsonPath Match" id="36e7d923-a346-4f8b-8862-cc46c34bd1c9" name="JsonPath Match"><con:configuration><path>$.fake_body</path><content>fake</content><allowWildcards>false</allowWildcards><ignoreNamspaceDifferences>false</ignoreNamspaceDifferences><ignoreComments>false</ignoreComments></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters><entry key="id" value="1" xmlns="http://eviware.com/soapui/config"/></con:parameters><con:parameterOrder><con:entry>id</con:entry><con:entry/></con:parameterOrder></con:restRequest></con:config></con:testStep><con:testStep type="properties" name="Properties - set id for another update" id="ba2679e0-14ad-438e-a704-b186087ed283"><con:settings/><con:config xsi:type="con:PropertiesStep" saveFirst="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:properties><con:property><con:name>id</con:name><con:value>101</con:value></con:property></con:properties></con:config></con:testStep><con:testStep type="transfer" name="Property Transfer - id for new updarte" id="b210ea07-b5fd-4c99-983a-fcc05627b096"><con:settings/><con:config xsi:type="con:PropertyTransfersStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:transfers setNullOnMissingSource="true" transferTextContent="true" failOnError="true" ignoreEmpty="false" transferToAll="false" entitize="false" transferChildNodes="false" disabled="false"><con:name>TransferId</con:name><con:sourceType>id</con:sourceType><con:sourceStep>Properties - set id for another update</con:sourceStep><con:targetType>id</con:targetType><con:targetStep>PUT update for non-existent entry 404 (Not Found)</con:targetStep><con:upgraded>true</con:upgraded></con:transfers></con:config></con:testStep><con:testStep type="restrequest" name="PUT update for non-existent entry 404 (Not Found)" id="d15aba6b-9288-46ad-be02-294692a6d631"><con:settings/><con:config service="http://jsonplaceholder.typicode.com" methodName="Put" resourcePath="/posts/{id}" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="PUT update for non-existent entry 404 (Not Found)" id="0a0163e3-58f1-4d13-968a-19ffca919dd5" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://jsonplaceholder.typicode.com</con:endpoint><con:request>{
+  "userId": 1,
+  "id": 1,
+   "title": "test_title2",
+   "body": "test_body2",
+   "fake_body": "fake"
+}</con:request><con:originalUri>http://jsonplaceholder.typicode.com/posts/1</con:originalUri><con:assertion type="Valid HTTP Status Codes" id="7154f56a-e9ff-427f-8280-1418870b1512" name="Valid HTTP Status Codes"><con:configuration><codes>404</codes></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters><entry key="id" value="101" xmlns="http://eviware.com/soapui/config"/></con:parameters><con:parameterOrder><con:entry>id</con:entry><con:entry/></con:parameterOrder></con:restRequest></con:config></con:testStep><con:properties/></con:testCase><con:testCase id="e0874c65-ee3b-412e-9a20-d114d50e25f8" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="Posts - get updated entry" searchProperties="true"><con:settings/><con:testStep type="properties" name="Properties - set id for get" id="0c2de7f9-9fbd-44c9-a124-34079e18a5d5"><con:settings/><con:config xsi:type="con:PropertiesStep" saveFirst="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:properties><con:property><con:name>id</con:name><con:value>1</con:value></con:property></con:properties></con:config></con:testStep><con:testStep type="transfer" name="Property Transfer - set id" id="023160bd-c8b0-4936-aebf-d9a7e5c288c8"><con:settings/><con:config xsi:type="con:PropertyTransfersStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:transfers setNullOnMissingSource="true" transferTextContent="true" failOnError="true" ignoreEmpty="false" transferToAll="false" entitize="false" transferChildNodes="false"><con:name>TransferId</con:name><con:sourceType>id</con:sourceType><con:sourceStep>Properties - set id for get</con:sourceStep><con:targetType>id</con:targetType><con:targetStep>REST Request - get updated entry 200 (OK)</con:targetStep><con:upgraded>true</con:upgraded></con:transfers></con:config></con:testStep><con:testStep type="restrequest" name="REST Request - get updated entry 200 (OK)" id="83ed7323-4913-4eee-9279-64a62a5df453"><con:settings/><con:config service="http://jsonplaceholder.typicode.com" methodName="Get" resourcePath="/posts/{id}" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="REST Request - get updated entry 200 (OK)" id="9d5bd60b-94e7-4729-ae32-7ee58434c6e7" mediaType="application/json"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://jsonplaceholder.typicode.com</con:endpoint><con:request/><con:originalUri>http://jsonplaceholder.typicode.com/posts/1</con:originalUri><con:assertion type="Valid HTTP Status Codes" id="794259d4-7363-4e2e-b571-0c7a7028eb40" name="Valid HTTP Status Codes"><con:configuration><codes>200</codes></con:configuration></con:assertion><con:assertion type="JsonPath Match" id="5d47ed42-a7b6-4e7e-a1c6-3bdae30cac04" name="JsonPath Match - userId"><con:configuration><path>$.userId</path><content>1</content><allowWildcards>false</allowWildcards><ignoreNamspaceDifferences>false</ignoreNamspaceDifferences><ignoreComments>false</ignoreComments></con:configuration></con:assertion><con:assertion type="JsonPath Match" id="0d85fc17-2bbc-4fcc-8935-60d54df98570" name="JsonPath Match id"><con:configuration><path>$.id</path><content>1</content><allowWildcards>false</allowWildcards><ignoreNamspaceDifferences>false</ignoreNamspaceDifferences><ignoreComments>false</ignoreComments></con:configuration></con:assertion><con:assertion type="JsonPath Match" id="3997b3c9-4843-4dd1-9c51-e7a8a58acb28" name="JsonPath Match title"><con:configuration><path>$.title</path><content>sunt aut facere repellat provident occaecati excepturi optio reprehenderit</content><allowWildcards>false</allowWildcards><ignoreNamspaceDifferences>false</ignoreNamspaceDifferences><ignoreComments>false</ignoreComments></con:configuration></con:assertion><con:assertion type="JsonPath Match" id="f778d9c5-3ce9-4880-930e-e75913b87c5a" name="JsonPath Match body"><con:configuration><path>$.body</path><content>quia et suscipit
+suscipit recusandae consequuntur expedita et cum
+reprehenderit molestiae ut ut quas totam
+nostrum rerum est autem sunt rem eveniet architecto</content><allowWildcards>false</allowWildcards><ignoreNamspaceDifferences>false</ignoreNamspaceDifferences><ignoreComments>false</ignoreComments></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters><entry key="id" value="1" xmlns="http://eviware.com/soapui/config"/></con:parameters><con:parameterOrder><con:entry>id</con:entry></con:parameterOrder></con:restRequest></con:config></con:testStep><con:properties/></con:testCase><con:testCase id="dd9012d9-8590-4eb8-b4d0-b0d401e21501" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="Posts - delete new entry" searchProperties="true"><con:settings/><con:testStep type="properties" name="Properties - set id for delete" id="fc76ab23-c58c-4a1b-9cb5-cf6e2ea7aa00"><con:settings/><con:config xsi:type="con:PropertiesStep" saveFirst="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:properties><con:property><con:name>id</con:name><con:value>1</con:value></con:property></con:properties></con:config></con:testStep><con:testStep type="transfer" name="Property Transfer - set id for delete" id="04ae502a-19ea-4368-8456-34c15251f8e1"><con:settings/><con:config xsi:type="con:PropertyTransfersStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:transfers setNullOnMissingSource="true" transferTextContent="true" failOnError="true" ignoreEmpty="false" transferToAll="false" entitize="false" transferChildNodes="false"><con:name>TransferId</con:name><con:sourceType>id</con:sourceType><con:sourceStep>Properties - set id for delete</con:sourceStep><con:targetType>id</con:targetType><con:targetStep>REST Request - delete entry 200 (OK)</con:targetStep><con:upgraded>true</con:upgraded></con:transfers></con:config></con:testStep><con:testStep type="restrequest" name="REST Request - delete entry 200 (OK)" id="1a3efad8-e111-4e6d-9b1b-160632c2d576"><con:settings/><con:config service="http://jsonplaceholder.typicode.com" methodName="Delete" resourcePath="/posts/{id}" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="REST Request - delete entry 200 (OK)" id="030c251b-a12a-407e-b3f2-94d868abff6f" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://jsonplaceholder.typicode.com</con:endpoint><con:request/><con:originalUri>http://jsonplaceholder.typicode.com/posts/1</con:originalUri><con:assertion type="Valid HTTP Status Codes" id="2609e77f-c63d-4290-920f-26c5ef8d28fd" name="Valid HTTP Status Codes"><con:configuration><codes>200</codes></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters><entry key="id" value="1" xmlns="http://eviware.com/soapui/config"/></con:parameters><con:parameterOrder><con:entry>id</con:entry><con:entry/></con:parameterOrder></con:restRequest></con:config></con:testStep><con:testStep type="properties" name="Properties - set id for get" id="88ae8ae2-407a-4313-8d3b-4047ec1ae10c"><con:settings/><con:config xsi:type="con:PropertiesStep" saveFirst="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:properties><con:property><con:name>id</con:name><con:value>101</con:value></con:property></con:properties></con:config></con:testStep><con:testStep type="transfer" name="Property Transfer - set id for get" id="9254f7a4-277d-4862-9bc6-671089bcf662"><con:settings/><con:config xsi:type="con:PropertyTransfersStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:transfers setNullOnMissingSource="true" transferTextContent="true" failOnError="true" ignoreEmpty="false" transferToAll="false" entitize="false" transferChildNodes="false"><con:name>TransferId</con:name><con:sourceType>id</con:sourceType><con:sourceStep>Properties - set id for get</con:sourceStep><con:targetType>id</con:targetType><con:targetStep>REST Request - try to get deleted entry 404 (Not Found)</con:targetStep><con:upgraded>true</con:upgraded></con:transfers></con:config></con:testStep><con:testStep type="restrequest" name="REST Request - try to get deleted entry 404 (Not Found)" id="93b1e1f4-4e6f-47b4-89a1-abcef341df90"><con:settings/><con:config service="http://jsonplaceholder.typicode.com" methodName="Get" resourcePath="/posts/{id}" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="REST Request - try to get deleted entry 404 (Not Found)" id="9d5bd60b-94e7-4729-ae32-7ee58434c6e7" mediaType="application/json"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://jsonplaceholder.typicode.com</con:endpoint><con:request/><con:originalUri>http://jsonplaceholder.typicode.com/posts/1</con:originalUri><con:assertion type="Valid HTTP Status Codes" id="794259d4-7363-4e2e-b571-0c7a7028eb40" name="Valid HTTP Status Codes"><con:configuration><codes>404</codes></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters><entry key="id" value="101" xmlns="http://eviware.com/soapui/config"/></con:parameters><con:parameterOrder><con:entry>id</con:entry></con:parameterOrder></con:restRequest></con:config></con:testStep><con:properties/></con:testCase><con:testCase id="12aadb70-3185-4695-8fb7-0b83943deffb" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="Users - get list of posts" searchProperties="true"><con:settings/><con:testStep type="restrequest" name="GET list of users" id="4bd93040-d905-41e1-8ea4-be3afc6d9a86"><con:settings/><con:config service="http://jsonplaceholder.typicode.com" methodName="Get" resourcePath="/users" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="GET list of users" id="9d170bc2-0d33-4e34-ac0c-a8a413f99e8e" mediaType="application/json"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://jsonplaceholder.typicode.com</con:endpoint><con:request/><con:originalUri>http://jsonplaceholder.typicode.com/users</con:originalUri><con:assertion type="Valid HTTP Status Codes" id="2fabfd70-ebb8-4a8d-929b-61115300e381" name="Valid HTTP Status Codes"><con:configuration><codes>200</codes></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/><con:parameterOrder><con:entry>id</con:entry></con:parameterOrder></con:restRequest></con:config></con:testStep><con:testStep type="groovy" name="Groovy Script - get userId from json" id="b7323e03-1b3d-4ad2-a04c-daa8928f6c29"><con:settings/><con:config><script>import groovy.json.*
+
+// get the response from the first request using its name
+def response = context.expand('${GET list of users#Response}')
+// parse it
+def json = new JsonSlurper().parseText(response)
+log.info json.id.toString()
+log.info json.id[2].toString()
+def userIdInStep = testRunner.testCase.getTestStepByName("GET posts for chosen user")
+userIdInStep.setPropertyValue("userId",json.id[2].toString())</script></con:config></con:testStep><con:testStep type="restrequest" name="GET posts for chosen user" id="06ef8b50-7967-4cb1-bdbf-83426be88370"><con:settings/><con:config service="http://jsonplaceholder.typicode.com" methodName="Get" resourcePath="/posts" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="GET posts for chosen user" id="bb5d9a0c-4878-43e7-818c-bcceed84a767" mediaType="application/json"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://jsonplaceholder.typicode.com</con:endpoint><con:request>[
+  {
+    "id": 1,
+    "name": "Leanne Graham",
+    "username": "Bret",
+    "email": "Sincere@april.biz",
+    "address": {
+      "street": "Kulas Light",
+      "suite": "Apt. 556",
+      "city": "Gwenborough",
+      "zipcode": "92998-3874",
+      "geo": {
+        "lat": "-37.3159",
+        "lng": "81.1496"
+      }
+    },
+    "phone": "1-770-736-8031 x56442",
+    "website": "hildegard.org",
+    "company": {
+      "name": "Romaguera-Crona",
+      "catchPhrase": "Multi-layered client-server neural-net",
+      "bs": "harness real-time e-markets"
+    }
+  },
+  {
+    "id": 2,
+    "name": "Ervin Howell",
+    "username": "Antonette",
+    "email": "Shanna@melissa.tv",
+    "address": {
+      "street": "Victor Plains",
+      "suite": "Suite 879",
+      "city": "Wisokyburgh",
+      "zipcode": "90566-7771",
+      "geo": {
+        "lat": "-43.9509",
+        "lng": "-34.4618"
+      }
+    },
+    "phone": "010-692-6593 x09125",
+    "website": "anastasia.net",
+    "company": {
+      "name": "Deckow-Crist",
+      "catchPhrase": "Proactive didactic contingency",
+      "bs": "synergize scalable supply-chains"
+    }
+  },
+  {
+    "id": 3,
+    "name": "Clementine Bauch",
+    "username": "Samantha",
+    "email": "Nathan@yesenia.net",
+    "address": {
+      "street": "Douglas Extension",
+      "suite": "Suite 847",
+      "city": "McKenziehaven",
+      "zipcode": "59590-4157",
+      "geo": {
+        "lat": "-68.6102",
+        "lng": "-47.0653"
+      }
+    },
+    "phone": "1-463-123-4447",
+    "website": "ramiro.info",
+    "company": {
+      "name": "Romaguera-Jacobson",
+      "catchPhrase": "Face to face bifurcated interface",
+      "bs": "e-enable strategic applications"
+    }
+  },
+  {
+    "id": 4,
+    "name": "Patricia Lebsack",
+    "username": "Karianne",
+    "email": "Julianne.OConner@kory.org",
+    "address": {
+      "street": "Hoeger Mall",
+      "suite": "Apt. 692",
+      "city": "South Elvis",
+      "zipcode": "53919-4257",
+      "geo": {
+        "lat": "29.4572",
+        "lng": "-164.2990"
+      }
+    },
+    "phone": "493-170-9623 x156",
+    "website": "kale.biz",
+    "company": {
+      "name": "Robel-Corkery",
+      "catchPhrase": "Multi-tiered zero tolerance productivity",
+      "bs": "transition cutting-edge web services"
+    }
+  },
+  {
+    "id": 5,
+    "name": "Chelsey Dietrich",
+    "username": "Kamren",
+    "email": "Lucio_Hettinger@annie.ca",
+    "address": {
+      "street": "Skiles Walks",
+      "suite": "Suite 351",
+      "city": "Roscoeview",
+      "zipcode": "33263",
+      "geo": {
+        "lat": "-31.8129",
+        "lng": "62.5342"
+      }
+    },
+    "phone": "(254)954-1289",
+    "website": "demarco.info",
+    "company": {
+      "name": "Keebler LLC",
+      "catchPhrase": "User-centric fault-tolerant solution",
+      "bs": "revolutionize end-to-end systems"
+    }
+  },
+  {
+    "id": 6,
+    "name": "Mrs. Dennis Schulist",
+    "username": "Leopoldo_Corkery",
+    "email": "Karley_Dach@jasper.info",
+    "address": {
+      "street": "Norberto Crossing",
+      "suite": "Apt. 950",
+      "city": "South Christy",
+      "zipcode": "23505-1337",
+      "geo": {
+        "lat": "-71.4197",
+        "lng": "71.7478"
+      }
+    },
+    "phone": "1-477-935-8478 x6430",
+    "website": "ola.org",
+    "company": {
+      "name": "Considine-Lockman",
+      "catchPhrase": "Synchronised bottom-line interface",
+      "bs": "e-enable innovative applications"
+    }
+  },
+  {
+    "id": 7,
+    "name": "Kurtis Weissnat",
+    "username": "Elwyn.Skiles",
+    "email": "Telly.Hoeger@billy.biz",
+    "address": {
+      "street": "Rex Trail",
+      "suite": "Suite 280",
+      "city": "Howemouth",
+      "zipcode": "58804-1099",
+      "geo": {
+        "lat": "24.8918",
+        "lng": "21.8984"
+      }
+    },
+    "phone": "210.067.6132",
+    "website": "elvis.io",
+    "company": {
+      "name": "Johns Group",
+      "catchPhrase": "Configurable multimedia task-force",
+      "bs": "generate enterprise e-tailers"
+    }
+  },
+  {
+    "id": 8,
+    "name": "Nicholas Runolfsdottir V",
+    "username": "Maxime_Nienow",
+    "email": "Sherwood@rosamond.me",
+    "address": {
+      "street": "Ellsworth Summit",
+      "suite": "Suite 729",
+      "city": "Aliyaview",
+      "zipcode": "45169",
+      "geo": {
+        "lat": "-14.3990",
+        "lng": "-120.7677"
+      }
+    },
+    "phone": "586.493.6943 x140",
+    "website": "jacynthe.com",
+    "company": {
+      "name": "Abernathy Group",
+      "catchPhrase": "Implemented secondary concept",
+      "bs": "e-enable extensible e-tailers"
+    }
+  },
+  {
+    "id": 9,
+    "name": "Glenna Reichert",
+    "username": "Delphine",
+    "email": "Chaim_McDermott@dana.io",
+    "address": {
+      "street": "Dayna Park",
+      "suite": "Suite 449",
+      "city": "Bartholomebury",
+      "zipcode": "76495-3109",
+      "geo": {
+        "lat": "24.6463",
+        "lng": "-168.8889"
+      }
+    },
+    "phone": "(775)976-6794 x41206",
+    "website": "conrad.com",
+    "company": {
+      "name": "Yost and Sons",
+      "catchPhrase": "Switchable contextually-based project",
+      "bs": "aggregate real-time technologies"
+    }
+  },
+  {
+    "id": 10,
+    "name": "Clementina DuBuque",
+    "username": "Moriah.Stanton",
+    "email": "Rey.Padberg@karina.biz",
+    "address": {
+      "street": "Kattie Turnpike",
+      "suite": "Suite 198",
+      "city": "Lebsackbury",
+      "zipcode": "31428-2261",
+      "geo": {
+        "lat": "-38.2386",
+        "lng": "57.2232"
+      }
+    },
+    "phone": "024-648-3804",
+    "website": "ambrose.net",
+    "company": {
+      "name": "Hoeger LLC",
+      "catchPhrase": "Centralized empowering task-force",
+      "bs": "target end-to-end models"
+    }
+  }
+]</con:request><con:originalUri>http://jsonplaceholder.typicode.com/posts/1</con:originalUri><con:assertion type="Valid HTTP Status Codes" id="2c335430-5b0b-4786-8ff9-31d1e9ac96e3" name="Valid HTTP Status Codes"><con:configuration><codes>200</codes></con:configuration></con:assertion><con:assertion type="Simple Contains" id="583bcb42-ad61-4859-ae37-fa8e4f1c131d" name="Contains"><con:configuration><token>"userId": 3</token><ignoreCase>true</ignoreCase><useRegEx>false</useRegEx></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters>
+  <con:entry key="id" value=""/>
+  <con:entry key="userId" value="3"/>
+  <con:entry key="#TestCase#id" value=""/>
+</con:parameters><con:parameterOrder><con:entry>#TestCase#id</con:entry><con:entry>userId</con:entry></con:parameterOrder></con:restRequest></con:config></con:testStep><con:properties><con:property><con:name>userId</con:name><con:value>3</con:value></con:property><con:property><con:name>id</con:name><con:value>3</con:value></con:property></con:properties></con:testCase><con:testCase id="547af81d-bce7-43e3-a6c8-4fcab4727733" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="Users - get nonexistent user" searchProperties="true"><con:settings/><con:testStep type="restrequest" name="GET list of users" id="b64c2110-83d3-463a-960c-f21809f980f5"><con:settings/><con:config service="http://jsonplaceholder.typicode.com" methodName="Get" resourcePath="/users" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="GET list of users" id="548a910e-162b-4d95-92f8-99da97ea620e" mediaType="application/json"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://jsonplaceholder.typicode.com</con:endpoint><con:request/><con:originalUri>http://jsonplaceholder.typicode.com/users</con:originalUri><con:assertion type="Valid HTTP Status Codes" id="f86b01a9-7d1c-4d3c-aa77-be0a02ebba1e" name="Valid HTTP Status Codes"><con:configuration><codes>200</codes></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:restRequest></con:config></con:testStep><con:testStep type="groovy" name="Groovy Script - get non-existent userId" id="2a4b818b-528d-499e-8a8a-00c98b868e4f"><con:settings/><con:config><script>import groovy.json.*
+
+// get the response from the first request using its name
+def response = context.expand('${GET list of users#Response}')
+// parse it
+def json = new JsonSlurper().parseText(response)
+String id = json.id.last()+1
+log.info id
+def var = testRunner.testCase.getTestStepByName("GET non-existent user")
+var.setPropertyValue("id", id)</script></con:config></con:testStep><con:testStep type="restrequest" name="GET non-existent user" id="2078e827-91a4-4208-bf3b-88c94bbaf821"><con:settings/><con:config service="http://jsonplaceholder.typicode.com" methodName="Get" resourcePath="/users/{id}" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="GET non-existent user" id="208c1885-333c-4842-80a6-fa496a34c062" mediaType="application/json"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://jsonplaceholder.typicode.com</con:endpoint><con:request/><con:originalUri>http://jsonplaceholder.typicode.com/users/id</con:originalUri><con:assertion type="Valid HTTP Status Codes" id="03145d71-30db-4cb7-8de0-82953d4e0bac" name="Valid HTTP Status Codes"><con:configuration><codes>404</codes></con:configuration></con:assertion><con:assertion type="Simple NotContains" id="0f171ba8-0952-4d04-94aa-39242c06567f" name="Not Contains"><con:configuration><token>"id": 11</token><ignoreCase>false</ignoreCase><useRegEx>false</useRegEx></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters>
+  <con:entry key="id" value="11"/>
+  <con:entry key="userId" value="11"/>
+</con:parameters></con:restRequest></con:config></con:testStep><con:properties/></con:testCase><con:testCase id="c48fba28-9760-4c66-aaf2-f8beae9bf520" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="Photos - get photo 25 from album 50" searchProperties="true"><con:settings/><con:testStep type="properties" name="Properties - set album number" id="d1c98843-f3d8-4786-8354-e4fff27afcb9"><con:settings/><con:config xsi:type="con:PropertiesStep" saveFirst="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:properties><con:property><con:name>albumId</con:name><con:value>50</con:value></con:property></con:properties></con:config></con:testStep><con:testStep type="transfer" name="Property Transfer - albumId" id="3d1dc9ab-af10-42d8-83ab-4793cd12d349"><con:settings/><con:config xsi:type="con:PropertyTransfersStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:transfers setNullOnMissingSource="true" transferTextContent="true" failOnError="true" disabled="false" entitize="false" ignoreEmpty="false" transferChildNodes="false" transferToAll="false" useXQuery="false"><con:name>TransferAlbumId</con:name><con:sourceType>albumId</con:sourceType><con:sourceStep>Properties - set album number</con:sourceStep><con:sourcePath xsi:nil="true"/><con:targetType>albumId</con:targetType><con:targetStep>GET list of photos from album 50</con:targetStep><con:targetPath xsi:nil="true"/><con:type>XPATH</con:type><con:targetTransferType>XPATH</con:targetTransferType><con:upgraded>true</con:upgraded></con:transfers></con:config></con:testStep><con:testStep type="restrequest" name="GET list of photos from album 50" id="b2161c1a-985c-4d17-938d-c0b5752513fc"><con:settings/><con:config service="http://jsonplaceholder.typicode.com" methodName="Get" resourcePath="/photos" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="GET list of photos from album 50" id="15d10025-2b70-4706-b600-a9555f05ee78" mediaType="application/json"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://jsonplaceholder.typicode.com</con:endpoint><con:request/><con:originalUri>http://jsonplaceholder.typicode.com/photos</con:originalUri><con:assertion type="Valid HTTP Status Codes" id="d1ce1805-d03f-422a-ba6b-e93eb3f1e553" name="Valid HTTP Status Codes"><con:configuration><codes>200</codes></con:configuration></con:assertion><con:assertion type="Simple Contains" id="2c34cab3-4451-4a22-9b81-0f72c469ecb4" name="Contains"><con:configuration><token>"albumId": 50</token><ignoreCase>false</ignoreCase><useRegEx>false</useRegEx></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters><entry key="albumId" value="50" xmlns="http://eviware.com/soapui/config"/></con:parameters></con:restRequest></con:config></con:testStep><con:testStep type="groovy" name="Groovy Script - get id for photo 25" id="b0ad2070-6bf2-41c2-815e-efbb0f7c128c"><con:settings/><con:config><script>import groovy.json.*
+
+// get the response from the first request using its name
+def response = context.expand('${GET list of photos from album 50#Response}')
+// parse it
+def json = new JsonSlurper().parseText(response)
+log.info json.id.toString()
+log.info json.id[24].toString()
+def varInStep = testRunner.testCase.getTestStepByName("GET photo 25 data")
+varInStep.setPropertyValue("id",json.id[24].toString())
+varInStep.setPropertyValue("albumId","50")</script></con:config></con:testStep><con:testStep type="restrequest" name="GET photo 25 data" id="8e14ebc3-27ef-4438-a290-4d2007e08421"><con:settings/><con:config service="http://jsonplaceholder.typicode.com" methodName="Get" resourcePath="/photos" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="GET photo 25 data" id="92cfa499-ec9a-4279-8457-902c8720d230" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://jsonplaceholder.typicode.com</con:endpoint><con:request/><con:originalUri>http://jsonplaceholder.typicode.com/photos</con:originalUri><con:assertion type="Simple Contains" id="638f1e75-ee4f-404f-b424-dab8ccc0d870" name="Contains valid id"><con:configuration><token>"id": 2475</token><ignoreCase>true</ignoreCase><useRegEx>false</useRegEx></con:configuration></con:assertion><con:assertion type="Simple Contains" id="14a9747c-4f5d-4f1f-a054-416c601609c9" name="Contains valid albumId"><con:configuration><token>"albumId": 50</token><ignoreCase>false</ignoreCase><useRegEx>false</useRegEx></con:configuration></con:assertion><con:assertion type="Valid HTTP Status Codes" id="752a2260-9f08-4ecf-a4d6-e0bd2ddd7e4c" name="Valid HTTP Status Codes"><con:configuration><codes>200</codes></con:configuration></con:assertion><con:assertion type="Simple Contains" id="783163c3-7745-49cf-878c-0bcbc8403dd2" name="Contains valid URL"><con:configuration><token>"url": "http://placehold.it/600/9e7740"</token><ignoreCase>false</ignoreCase><useRegEx>false</useRegEx></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters>
+  <con:entry key="id" value="2475"/>
+  <con:entry key="albumId" value="50"/>
+</con:parameters></con:restRequest></con:config></con:testStep><con:testStep type="groovy" name="Groovy Script - get Url and thumbnailUrl" id="86e5b042-f14c-4681-a886-b8f991c903b8"><con:settings/><con:config><script>import groovy.json.*
+
+// get the response from the first request using its name
+def response = context.expand('${GET photo 25 data#Response}')
+// parse it
+def json = new JsonSlurper().parseText(response)
+log.info json.url[0].toString()
+log.info json.thumbnailUrl[0].toString()
+def urlInStep = testRunner.testCase.getTestStepByName("Get Url")
+urlInStep.getHttpRequest().setEndpoint(json.url[0].toString())
+def url2InStep = testRunner.testCase.getTestStepByName("Get ThumbnailUrl")
+url2InStep.getHttpRequest().setEndpoint(json.thumbnailUrl[0].toString())
+</script></con:config></con:testStep><con:testStep type="httprequest" name="Get Url" id="e542b6ec-8083-4b5a-94a6-4969556c9929"><con:settings/><con:config method="GET" xsi:type="con:HttpRequest" id="45e4c169-9926-4120-abf9-8bbf614e9b86" name="Get Url" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>http://placehold.it/600/9e7740</con:endpoint><con:request/><con:assertion type="Valid HTTP Status Codes" id="cb8c44b1-8744-4f9c-856e-fdf6ae872dd6" name="Valid HTTP Status Codes"><con:configuration><codes>200</codes></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:config></con:testStep><con:testStep type="httprequest" name="Get ThumbnailUrl" id="de5200d5-af22-4fb3-ae17-407d7ea6272b"><con:settings/><con:config method="GET" xsi:type="con:HttpRequest" id="45e4c169-9926-4120-abf9-8bbf614e9b86" name="Get ThumbnailUrl" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>http://placehold.it/150/827c0a</con:endpoint><con:request/><con:assertion type="Valid HTTP Status Codes" id="f38dc858-a22c-438d-acc0-6afd23d3df52" name="Valid HTTP Status Codes"><con:configuration><codes>200</codes></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:config></con:testStep><con:properties/></con:testCase><con:properties/></con:testSuite><con:properties><con:property><con:name>a</con:name><con:value>a</con:value></con:property><con:property><con:name>d</con:name><con:value>d</con:value></con:property></con:properties><con:wssContainer/><con:oAuth2ProfileContainer/><con:sensitiveInformation/></con:soapui-project>
