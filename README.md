@@ -11,3 +11,10 @@ This project demonstates the main steps and transitions in SoapUI for beginners.
 * Open SoapUI and Import Packet Project
 * Navigate to Jsonplaceholder Test Suite
 * Right-click on it and select Launch TestRunner
+
+# What is under test
+* Get list of "todos" having "completed" = true
+* Creating some simple tests for "posts" (create, read, update, delete).
+* Get list of users and then get some user's posts
+* Get list of users, determine a nonexistent user ID and get it. Check response.
+* Get photo #25 from album #50 and check its "url", "thumbnailUrl"
