@@ -1,4 +1,4 @@
-# JasonplaceholderSoapuiTest
+# JsonplaceholderSoapuiTest
 http://jsonplaceholder.typicode.com/ is used as a free REST API for SoapUI project.
 This project demonstates the main steps and transitions in SoapUI for beginners.
 
