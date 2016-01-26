@@ -1,4 +1,3 @@
-![alt tag](https://media.licdn.com/media/p/3/005/083/306/0f1119a.png)
 # JasonplaceholderSoapuiTest
 http://jsonplaceholder.typicode.com/ is used as a free REST API for SoapUI project.
 This project demonstates the main steps and transitions in SoapUI for beginners.
